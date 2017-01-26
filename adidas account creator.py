@@ -3,12 +3,17 @@ from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
 
 basemail = raw_input('Enter prefix of your email\t')
+
 randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
 if randompass == 'y' and 'y':
     print 'Generating Random passwords.'
 else:
     password = raw_input('Enter Desired Password\t')
 accountstogen = raw_input('Enter Desired Accounts to be Made\t')
+maxemails = len(basemail) * len(basemail)
+if len(basemail) < accountstogen:
+    print "You can only generate a max of {} using email {}@gmail.com".format(maxemails,basemail)
+    exit()
 accountstogen = int(accountstogen)
 
 
