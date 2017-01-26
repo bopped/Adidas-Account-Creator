@@ -11,17 +11,9 @@ else:
     password = raw_input('Enter Desired Password\t')
 accountstogen = raw_input('Enter Desired Accounts to be Made\t')
 accountstogen = int(accountstogen)
-if len(basemail) > 2:
-    maxemails = (len(basemail) - 1)** 2
-if len(basemail) <= 2:
-    maxemails = 2
-
-if maxemails < accountstogen:
-    print "You can only generate a max of {} using email {}@gmail.com".format(maxemails,basemail)
-    exit()
 
 
-
+# TODO : ADD A LIMIT To AMOUNT OF ACCS TO BE CREATED!
 
 def account_successfully_created(response):
     try:
@@ -82,7 +74,7 @@ for email in \
 
     if account_successfully_created(r) == False:
         # print 'ACCOUNT EXISTS'
-        print "Username = {0}, Password = {1}, Account EXISTS".format(email, password)
+        print "Account EXISTS : Username = {0}, Password = {1}".format(email, password)
     if account_successfully_created(r) == True:
         print "Created Account : Username = {0}, Password = {1}".format(email, password)
         with open('accounts' + '.txt', 'a') as f:
