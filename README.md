@@ -7,7 +7,7 @@ All Credit to https://github.com/doprdele for orginal script.
 - Written on Python 2
 - Minor changes from orginal script. Writes to .txt. Can add other option to write to. DM me on twitter @backdoorcook
 - Requirements : Modules : requests , BeautifulSoup4 , GmailDotEmailGenerator
-- AS OF NOW. If you wish to create the max amount of accounts with your email input a number like 500. It will auto stop when it can't put my dots in your email. #### Sorry I'm just stupid atm.
+- AS OF NOW. If you wish to create the max amount of accounts with your email input a number like 500. It will auto stop when it can't put anymore dots in your email. #### Sorry I'm just stupid atm.
 --------------------------------------------------------------------
 2. How to Run:
 - Change first & last name in adidas account gen.py
