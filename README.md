@@ -4,13 +4,11 @@ All Credit to https://github.com/doprdele
 
 --------------------------------------------------------------------
 1. Info:
-
 - Tested on python 2
 - Minor changes from orginal script. Writes to .txt. Can add other option to write to. DM me on twitter @backdoorcook
 - Requirements : Modules : requests , BeautifulSoup , GmailDotEmailGenerator
 --------------------------------------------------------------------
 2. How to Run:
-
 - Download this https://github.com/doprdele/GmailDotEmailGenerator 
 - Unzip. 
 - cd to the location via Terminal / CMD
