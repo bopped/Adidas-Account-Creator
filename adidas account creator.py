@@ -2,10 +2,19 @@ import requests
 import time
 from BeautifulSoup import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
+import random
+import string
+import os
 
-basemail = raw_input('Enter prefix of your email ')
-password = raw_input('Enter Desired Password ')
-accountstogen = raw_input('Enter Desired Accounts to be Made ')
+
+
+basemail = raw_input('Enter prefix of your email\t')
+randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
+if randompass == 'y' and 'y':
+    print 'USING Random passwords!'
+else:
+    password = raw_input('Enter Desired Password\t')
+accountstogen = raw_input('Enter Desired Accounts to be Made\t')
 accountstogen = int(accountstogen)
 
 
@@ -28,6 +37,11 @@ for email in \
         'Accept-Language': 'en-US,en;q=0.8',
         'Upgrade-Insecure-Requests': '1'
     }
+    if randompass == 'y' and 'y':
+        length = 13
+        chars = string.ascii_letters + string.digits + '$&@?!#%'
+        random.seed = (os.urandom(1024))
+        password =  ''.join(random.choice(chars) for i in range(length))
 
     s = requests.Session()
     s.headers.update(headers)
@@ -66,9 +80,8 @@ for email in \
         print "Username = {0}, Password = {1}, Account EXISTS".format(email, password)
     if account_successfully_created(r) == True:
         print "Created Account : Username = {0}, Password = {1}".format(email, password)
-
-    with open('accounts' + '.txt', 'a') as f:
-        f.write(email + ':' + password + '\n')
-        f.close()
+        with open('accounts' + '.txt', 'a') as f:
+            f.write(email + ':' + password + '\n')
+            f.close()
 
     time.sleep(5)
