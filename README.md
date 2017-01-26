@@ -15,7 +15,8 @@ All Credit to https://github.com/doprdele
 - python setup.py install
 - GmailDotGen should be installed
 - Run Adi Account Gen .py 
-- When you are prompted for Prefix. It means enter everything before @gmail.com for instances simmy212@gmail.com > simmy212
+- When you are prompted for Prefix. It means enter everything before @gmail.com for instances: 
+- simmy212@gmail.com > enter simmy212
 - rest is self explanatory. 
 --------------------------------------------------------------------
 3. Troubleshooting. DM me, willing to help you.
