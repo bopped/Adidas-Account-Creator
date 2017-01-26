@@ -6,7 +6,7 @@ All Credit to https://github.com/doprdele/adidas-account-creator
 1. Info:
 
 - Tested on python 2
-- Minor changes from orginal script. Writes to .txt. Can add other option to write to. DM me on twitter @backdoorcook.
+- Minor changes from orginal script. Writes to .txt. Can add other option to write to. DM me on twitter @backdoorcook
 - Requirements : Modules : requests , BeautifulSoup , GmailDotEmailGenerator
 --------------------------------------------------------------------
 2. How to Run:
