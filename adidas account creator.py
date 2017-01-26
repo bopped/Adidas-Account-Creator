@@ -11,7 +11,7 @@ import os
 basemail = raw_input('Enter prefix of your email\t')
 randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
 if randompass == 'y' and 'y':
-    print 'USING Random passwords!'
+    print 'Generating Random passwords.'
 else:
     password = raw_input('Enter Desired Password\t')
 accountstogen = raw_input('Enter Desired Accounts to be Made\t')
@@ -55,8 +55,8 @@ for email in \
     })
     r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',
                data={
-                   'firstName': 'YOUR_FIRST_NAME',
-                   'lastName': 'Sarmiento',
+                   'firstName': 'YOUR_FIRST_NAME', ### Set your Name
+                   'lastName': 'Sarmiento', # Set your name
                    'minAgeCheck': 'true',
                    '_minAgeCheck': 'on',
                    'email': email,
