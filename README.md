@@ -4,7 +4,7 @@ All Credit to https://github.com/doprdele for orginal script.
 
 --------------------------------------------------------------------
 1. Info:
-- Tested on python 2
+- Written on Python 2
 - Minor changes from orginal script. Writes to .txt. Can add other option to write to. DM me on twitter @backdoorcook
 - Requirements : Modules : requests , BeautifulSoup4 , GmailDotEmailGenerator
 --------------------------------------------------------------------
