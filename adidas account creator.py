@@ -1,12 +1,6 @@
-import requests
-import time
-from BeautifulSoup import BeautifulSoup
+import requests, time, random, string, os
+from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
-import random
-import string
-import os
-
-
 
 basemail = raw_input('Enter prefix of your email\t')
 randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
@@ -20,8 +14,8 @@ accountstogen = int(accountstogen)
 
 def account_successfully_created(response):
     try:
-        return False if BeautifulSoup(response.text).find('input',
-                                                          {'id': 'resumeURL'}).get('value') == \
+        return False if BeautifulSoup(response.text, "html.parser").find('input',
+                                                                         {'id': 'resumeURL'}).get('value') == \
                         'https://www.adidas.com/on/demandware.store/Sites-adidas-US-Site/en_US/MyAccount-CreateOrLogin' \
             else True
     except:
@@ -41,13 +35,13 @@ for email in \
         length = 13
         chars = string.ascii_letters + string.digits + '$&@?!#%'
         random.seed = (os.urandom(1024))
-        password =  ''.join(random.choice(chars) for i in range(length))
+        password = ''.join(random.choice(chars) for i in range(length))
 
     s = requests.Session()
     s.headers.update(headers)
 
     r = s.get('https://cp.adidas.com/web/eCom/en_US/loadcreateaccount')
-    csrftoken = BeautifulSoup(r.text).find('input', {'name': 'CSRFToken'}).get('value')
+    csrftoken = BeautifulSoup(r.text, "html.parser").find('input', {'name': 'CSRFToken'}).get('value')
 
     s.headers.update({
         'Origin': 'https://cp.adidas.com',
@@ -55,8 +49,8 @@ for email in \
     })
     r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',
                data={
-                   'firstName': 'YOUR_FIRST_NAME', ### Set your Name
-                   'lastName': 'Sarmiento', # Set your name
+                   'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
+                   'lastName': 'Sarmiento',  # Set your name
                    'minAgeCheck': 'true',
                    '_minAgeCheck': 'on',
                    'email': email,
