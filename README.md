@@ -15,6 +15,7 @@ All Credit to https://github.com/doprdele
 - python setup.py install
 - GmailDotGen should be installed
 - Run Adi Account Gen .py 
+- Enter prefix : e.g. prefix : simmy for an email simmy@gmail.com
 --------------------------------------------------------------------
 3. Troubleshooting. DM me, willing to help you.
 --------------------------------------------------------------------
