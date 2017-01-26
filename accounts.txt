@@ -1,0 +1,10 @@
+mytestacc@gmail.com:Mytesting1
+mytestac.c@gmail.com:Mytesting1
+mytesta.cc@gmail.com:Mytesting1
+mytesta.c.c@gmail.com:Mytesting1
+mytest.acc@gmail.com:Mytesting1
+mytest.ac.c@gmail.com:Mytesting1
+mytest.a.cc@gmail.com:Mytesting1
+mytest.a.c.c@gmail.com:Mytesting1
+mytes.tacc@gmail.com:Mytesting1
+mytes.tac.c@gmail.com:Mytesting1
