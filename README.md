@@ -1,6 +1,6 @@
 # Adidas-Account-Gen
 
-All Credit to https://github.com/doprdele/adidas-account-creator
+All Credit to https://github.com/doprdele 
 
 --------------------------------------------------------------------
 1. Info:
