@@ -11,7 +11,7 @@ else:
     password = raw_input('Enter Desired Password\t')
 accountstogen = raw_input('Enter Desired Accounts to be Made\t')
 accountstogen = int(accountstogen)
-maxemails = len(basemail) * len(basemail)
+maxemails = len(basemail) ** 2
 if maxemails < accountstogen:
     print "You can only generate a max of {} using email {}@gmail.com".format(maxemails,basemail)
     exit()
