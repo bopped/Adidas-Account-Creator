@@ -17,10 +17,10 @@ accountstogen = int(accountstogen)
 
 def account_successfully_created(response):
     try:
+
         return False if BeautifulSoup(response.text, "html.parser").find('input',
-                                                                         {'id': 'resumeURL'}).get('value') == \
-                        'https://www.adidas.co.uk/on/demandware.store/Sites-adidas-GB-Site/en_GB/MyAccount-CreateOrLogin' \
-            else True
+                                                                         {'id': 'resumeURL'}).get('value') == "" \
+            else False
     except:
         return True
 
