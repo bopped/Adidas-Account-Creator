@@ -13,7 +13,7 @@ accountstogen = raw_input('Enter Desired Accounts to be Made\t')
 accountstogen = int(accountstogen)
 
 
-# TODO : CHOKE A SOUTH PARK WRITE WITH A FISH-STICK
+# TODO : CHOKE A SOUTH PARK WRITER WITH A FISH-STICK
 
 def account_successfully_created(response):
     try:
