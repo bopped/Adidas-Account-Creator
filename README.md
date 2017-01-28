@@ -1,4 +1,4 @@
-# Adidas-Account-Gen
+# Adidas Account Gen.
 
 All Credit to https://github.com/doprdele for orginal script.
 
