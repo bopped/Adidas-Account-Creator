@@ -2,6 +2,7 @@ import requests, time, random, string, os
 from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
 
+
 # TODO : ADD A LIMIT To AMOUNT OF ACCS TO BE CREATED!
 
 def account_successfully_createdUS(response):
@@ -12,6 +13,7 @@ def account_successfully_createdUS(response):
             else True
     except:
         return True
+
 
 def US():
     print 'WE ARE GENERATING FOR ADIDAS US'
@@ -73,16 +75,18 @@ def US():
                        'CSRFToken': csrftoken
                    })
 
-    if account_successfully_createdUS(r) == False:
-        # print 'ACCOUNT EXISTS'
-        print "Account EXISTS : Username = {0}, Password = {1}".format(email, password)
-    if account_successfully_createdUS(r) == True:
-        print "Created Account : Username = {0}, Password = {1}".format(email, password)
-        with open('accounts' + '.txt', 'a') as f:
-            f.write(email + ':' + password + '\n')
-            f.close()
+        if account_successfully_createdUS(r) == False:
+            # print 'ACCOUNT EXISTS'
+            print "Account EXISTS : Username = {0}, Password = {1}".format(email, password)
 
-    time.sleep(5)
+        if account_successfully_createdUS(r) == True:
+
+            print "Created Account : Username = {0}, Password = {1}".format(email, password)
+            with open('accounts' + '.txt', 'a') as f:
+                f.write(email + ':' + password + '\n')
+                f.close()
+
+            time.sleep(5)
 
 
 def account_successfully_createdUK(response):
@@ -93,6 +97,7 @@ def account_successfully_createdUK(response):
             else False
     except:
         return True
+
 
 def UK():
     print 'WE ARE GENERATING FOR ADIDAS UK'
@@ -136,9 +141,9 @@ def UK():
                        'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
                        'lastName': 'Sarmiento',  # Set your name
                        'minAgeCheck': 'true',
-                       'day':'3',
-                        'month':'4',
-                        'year':'1994',
+                       'day': '3',
+                       'month': '4',
+                       'year': '1994',
                        '_minAgeCheck': 'on',
                        'email': email,
                        'password': password,
@@ -167,6 +172,7 @@ def UK():
 
         time.sleep(5)
 
+
 def AU():
     print 'WE ARE GENERATING FOR ADIDAS AU'
     basemail = raw_input('Enter prefix of your email\t')
@@ -178,6 +184,7 @@ def AU():
         password = raw_input('Enter Desired Password\t')
     accountstogen = raw_input('Enter Desired Accounts to be Made\t')
     accountstogen = int(accountstogen)
+
     def account_successfully_created(response):
         try:
             return False if BeautifulSoup(response.text, "html.parser").find('input',
@@ -245,6 +252,8 @@ def AU():
                 f.close()
 
         time.sleep(5)
+
+
 def CA():
     print 'WE ARE GENERATING FOR ADIDAS CA'
     basemail = raw_input('Enter prefix of your email\t')
@@ -323,25 +332,20 @@ def CA():
                 f.close()
 
         time.sleep(5)
+
+
 def main():
     x = 0
-    while x == 0:
-        try:
-            loc = raw_input('ENTER LOC US OR UK?\t')
-            if loc == 'UK':
-                UK()
-            if loc == 'US':
-                US()
-            if loc == 'AU':
-                AU()
-            if loc == 'CA':
-                CA()
 
-        except (KeyboardInterrupt, SystemExit):
-            again = raw_input(color.BOLD + "Run again? (Y/n): \n" + color.END)
-            if (again == 'n') or (again == 'no'):
-                print color.UNDERLINE + "\n\nTerminated" + color.END + "\n\n"
-            else:
-                os.execl(sys.executable, sys.executable, *sys.argv)
+    loc = raw_input('ENTER LOC US UK CA AU  \t')
+    if loc == 'UK':
+        UK()
+    if loc == 'US':
+        US()
+    if loc == 'AU':
+        AU()
+    if loc == 'CA':
+        CA()
+
 
 main()
