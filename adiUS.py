@@ -76,16 +76,16 @@ def US():
                        'CSRFToken': csrftoken
                    })
 
-    if account_successfully_createdUS(r) == False:
-        # print 'ACCOUNT EXISTS'
-        print("Account EXISTS : Username = {0}, Password = {1}".format(email, password))
-    if account_successfully_createdUS(r) == True:
-        print("Created Account : Username = {0}, Password = {1}".format(email, password))
-        with open('accounts' + '.txt', 'a') as f:
-            f.write(email + ':' + password + '\n')
-            f.close()
+        if account_successfully_createdUS(r) == False:
+            # print 'ACCOUNT EXISTS'
+            print("Account EXISTS : Username = {0}, Password = {1}".format(email, password))
+        if account_successfully_createdUS(r) == True:
+            print("Created Account : Username = {0}, Password = {1}".format(email, password))
+            with open('accounts' + '.txt', 'a') as f:
+                f.write(email + ':' + password + '\n')
+                f.close()
 
-    time.sleep(5)
+        time.sleep(5)
 
 
 def account_successfully_createdUK(response):
