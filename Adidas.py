@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
 
 
-# TODO : ADD A LIMIT To AMOUNT OF ACCS TO BE CREATED!
+# TODO : Turn off this rap music
 
 def account_successfully_createdUS(response):
     try:
