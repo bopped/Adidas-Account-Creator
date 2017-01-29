@@ -12,16 +12,17 @@ Info:
 - AS OF NOW. If you wish to create the max amount of accounts with your email input a number like 500. It will auto stop when it can't put anymore dots in your email. #### Sorry I'm just stupid atm.
 --------------------------------------------------------------------
 2. How to Run:
-- Change first & last name in adidas account gen.py
+- ******Change first & last name in adidas account gen.py ****
 - Download this https://github.com/doprdele/GmailDotEmailGenerator 
 - Unzip. 
-- cd to the location via Terminal / CMD
+- CD to the location via Terminal / CMD
 - python setup.py install
-- GmailDotGen should be installed
+- GmailDotGen should be installed. This is only a 1 time thing. You don't have to keep reinstalling.
 - Run Adi Account Gen .py 
 - When you are prompted for Prefix. It means enter everything before @gmail.com for instances: 
 - simmy212@gmail.com > enter simmy212
-- rest is self explanatory. 
+- ?????
+- profit.
 --------------------------------------------------------------------
 3. Troubleshooting. DM me, willing to help you.
 --------------------------------------------------------------------
