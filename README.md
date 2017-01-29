@@ -4,7 +4,7 @@ All Credit to https://github.com/doprdele for orginal script.
 
 --------------------------------------------------------------------
 Info:
-- Written on Python 2
+- Written on Python 2 - PYTHON 3 VERISION IS adi(3)
 - Minor changes from orginal script. 
 - Writes to .txt. 
 - Can add other option to write to. DM me on twitter @backdoorcook
