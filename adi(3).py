@@ -1,62 +1,3 @@
-from __future__ import absolute_import, division, print_function
-import requests, time, random, string, os
-from bs4 import BeautifulSoup
-from GmailDotEmailGenerator import GmailDotEmailGenerator
-
-
-# TODO : ADD A LIMIT To AMOUNT OF ACCS TO BE CREATED!
-
-def account_successfully_createdUS(response):
-    try:
-        return False if BeautifulSoup(response.text, "html.parser").find('input',
-                                                                         {'id': 'resumeURL'}).get('value') == \
-                        'https://www.adidas.com/on/demandware.store/Sites-adidas-US-Site/en_US/MyAccount-CreateOrLogin' \
-            else True
-    except:
-        return True
-
-
-def US():
-    print('WE ARE GENERATING FOR ADIDAS US')
-
-    basemail = raw_input('Enter prefix of your email\t')
-
-    randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
-    if randompass == 'y' and 'y':
-        print('Generating Random passwords.')
-    else:
-        password = raw_input('Enter Desired Password\t')
-    accountstogen = raw_input('Enter Desired Accounts to be Made\t')
-    accountstogen = int(accountstogen)
-
-    for email in \
-            (GmailDotEmailGenerator(basemail + '@gmail.com').generate())[:accountstogen]:
-
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36',
-            'Accept-Encoding': 'gzip, deflate, sdch, br',
-            'Accept-Language': 'en-US,en;q=0.8',
-            'Upgrade-Insecure-Requests': '1'
-        }
-        if randompass == 'y' and 'y':
-            length = 13
-            chars = string.ascii_letters + string.digits + '$&@?!#%'
-            random.seed = (os.urandom(1024))
-            password = ''.join(random.choice(chars) for i in range(length))
-
-        s = requests.Session()
-        s.headers.update(headers)
-
-        r = s.get('https://cp.adidas.com/web/eCom/en_US/loadcreateaccount')
-        csrftoken = BeautifulSoup(r.text, "html.parser").find('input', {'name': 'CSRFToken'}).get('value')
-
-        s.headers.update({
-            'Origin': 'https://cp.adidas.com',
-            'Referer': 'https://cp.adidas.com/web/eCom/en_US/loadcreateaccount',
-        })
-        r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',
-                   data={
-                       'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
                        'lastName': 'Sarmiento',  # Set your name
                        'minAgeCheck': 'true',
                        '_minAgeCheck': 'on',
@@ -100,14 +41,14 @@ def account_successfully_createdUK(response):
 
 def UK():
     print('WE ARE GENERATING FOR ADIDAS UK')
-    basemail = raw_input('Enter prefix of your email\t')
+    basemail = input('Enter prefix of your email\t')
 
-    randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
+    randompass = input('Do you want a random pass? Y for Yes. Any other Key for No\t')
     if randompass == 'y' and 'y':
         print('Generating Random passwords.')
     else:
-        password = raw_input('Enter Desired Password\t')
-    accountstogen = raw_input('Enter Desired Accounts to be Made\t')
+        password = input('Enter Desired Password\t')
+    accountstogen = input('Enter Desired Accounts to be Made\t')
     accountstogen = int(accountstogen)
 
     for email in \
@@ -174,14 +115,14 @@ def UK():
 
 def AU():
     print('WE ARE GENERATING FOR ADIDAS AU')
-    basemail = raw_input('Enter prefix of your email\t')
+    basemail = input('Enter prefix of your email\t')
 
-    randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
+    randompass = input('Do you want a random pass? Y for Yes. Any other Key for No\t')
     if randompass == 'y' and 'y':
         print('Generating Random passwords.')
     else:
-        password = raw_input('Enter Desired Password\t')
-    accountstogen = raw_input('Enter Desired Accounts to be Made\t')
+        password = input('Enter Desired Password\t')
+    accountstogen = input('Enter Desired Accounts to be Made\t')
     accountstogen = int(accountstogen)
 
     def account_successfully_created(response):
@@ -255,13 +196,13 @@ def AU():
 
 def CA():
     print('WE ARE GENERATING FOR ADIDAS CA')
-    basemail = raw_input('Enter prefix of your email\t')
-    randompass = raw_input('Do you want a random pass? Y for Yes. Any other Key for No\t')
+    basemail = input('Enter prefix of your email\t')
+    randompass = input('Do you want a random pass? Y for Yes. Any other Key for No\t')
     if randompass == 'y' and 'y':
         print('Generating Random passwords.')
     else:
-        password = raw_input('Enter Desired Password\t')
-    accountstogen = raw_input('Enter Desired Accounts to be Made\t')
+        password = input('Enter Desired Password\t')
+    accountstogen = input('Enter Desired Accounts to be Made\t')
     accountstogen = int(accountstogen)
 
     def account_successfully_created(response):
@@ -335,7 +276,7 @@ def CA():
 
 def main():
     while True:
-        loc = raw_input('ENTER LOC US UK AU CA.\t')
+        loc = input('ENTER LOC US UK AU CA.\t')
         if loc == 'UK':
             UK()
         if loc == 'US':
