@@ -23,7 +23,7 @@ Info:
 - ?????
 - profit.
 --------------------------------------------------------------------
-3. Troubleshooting. DM me, willing to help you.
+3. Troubleshooting. DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
 --------------------------------------------------------------------
 4. Feel free to study, revise mine. It's open source for a reason.
 --------------------------------------------------------------------
