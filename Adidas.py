@@ -335,8 +335,6 @@ def CA():
 
 
 def main():
-    x = 0
-
     loc = raw_input('ENTER LOC US UK CA AU  \t')
     if loc == 'UK':
         UK()
@@ -346,6 +344,4 @@ def main():
         AU()
     if loc == 'CA':
         CA()
-
-
 main()
