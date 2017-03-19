@@ -1,11 +1,11 @@
 from __future__ import absolute_import, division, print_function
-import requests, time, random, string, os
+import requests, time, random, string, os, json
 from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
-# TODO : MORE LIFE Python 3 Version.   
+
+# TODO : MORE LIFE Python 3 Version.
 with open('config.json') as json_data_file:
     data = json.load(json_data_file)
-
 
 FirstName = data['INFO']['First_Name']
 LastName = data['INFO']['Last_Name']
@@ -342,17 +342,16 @@ def CA():
 
 
 def main():
-    while True:
-        print('Config Loaded! \n\nUsing First Name: {} \nLast Name: {} \nDate Of Birth \nMonth: {} \nDay: {} \nYear: {} \n' .format(FirstName,LastName,Month,Day,Year))
-        loc = input('ENTER LOC US UK AU CA.\t')
-        if loc == 'UK':
-            UK()
-        if loc == 'US':
-            US()
-        if loc == 'AU':
-            AU()
-        if loc == 'CA':
-            CA()
+    print('Config Loaded! \n\nUsing First Name: {} \nLast Name: {} \nDate Of Birth \nMonth: {} \nDay: {} \nYear: {} \n'.format(FirstName, LastName, Month, Day, Year))
+    loc = input('ENTER LOC US UK AU CA.\t')
+    if loc == 'UK':
+        UK()
+    if loc == 'US':
+        US()
+    if loc == 'AU':
+        AU()
+    if loc == 'CA':
+        CA()
 
 
 main()
