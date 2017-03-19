@@ -1,9 +1,17 @@
-import requests, time, random, string, os
+import requests, time, random, string, os,json
 from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
+# TODO : MORE LIFE
+with open('config.json') as json_data_file:
+    data = json.load(json_data_file)
 
 
-# TODO : Turn off this rap music
+FirstName = data['INFO']['First_Name']
+LastName = data['INFO']['Last_Name']
+Month = data['INFO']['Month']
+Day = data['INFO']['Day']
+Year = data['INFO']['Year']
+
 
 def account_successfully_createdUS(response):
     try:
@@ -55,8 +63,8 @@ def US():
         })
         r = s.post('https://cp.adidas.com/web/eCom/en_US/accountcreate',
                    data={
-                       'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
-                       'lastName': 'Sarmiento',  # Set your name
+                       'firstName': FirstName,
+                       'lastName': LastName,
                        'minAgeCheck': 'true',
                        '_minAgeCheck': 'on',
                        'email': email,
@@ -138,12 +146,12 @@ def UK():
         })
         r = s.post('https://cp.adidas.co.uk/web/eCom/en_GB/accountcreate',
                    data={
-                       'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
-                       'lastName': 'Sarmiento',  # Set your name
+                       'firstName': FirstName,
+                       'lastName': LastName,
                        'minAgeCheck': 'true',
-                       'day': '3',
-                       'month': '4',
-                       'year': '1994',
+                       'day': Day,
+                       'month': Month,
+                       'year': Year,
                        '_minAgeCheck': 'on',
                        'email': email,
                        'password': password,
@@ -221,11 +229,11 @@ def AU():
         })
         r = s.post('https://cp.adidas.com/web/eCom/en_AU/accountcreate',
                    data={
-                       'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
-                       'lastName': 'Sarmiento',  # Set your name
-                       'day': '5',
-                       'month': '10',
-                       'year': '1980',
+                       'firstName': FirstName,
+                       'lastName': LastName,
+                       'day': Day,
+                       'month': Month,
+                       'year': Year,
                        'email': email,
                        'password': password,
                        'confirmPassword': password,
@@ -301,8 +309,8 @@ def CA():
         })
         r = s.post('https://cp.adidas.ca/web/eCom/en_CA/accountcreate',
                    data={
-                       'firstName': 'YOUR_FIRST_NAME',  ### Set your Name
-                       'lastName': 'Sarmiento',  # Set your name
+                       'firstName': FirstName,
+                       'lastName': LastName,
                        'minAgeCheck': 'true',
                        '_minAgeCheck': 'on',
                        'email': email,
@@ -335,6 +343,7 @@ def CA():
 
 
 def main():
+    print 'Config Loaded! \n\nUsing First Name: {} \nLast Name: {} \nDate Of Birth \nMonth: {} \nDay: {} \nYear: {} \n' .format(FirstName,LastName,Month,Day,Year)
     loc = raw_input('ENTER LOC US UK CA AU  \t')
     if loc == 'UK':
         UK()
@@ -344,4 +353,5 @@ def main():
         AU()
     if loc == 'CA':
         CA()
+
 main()
