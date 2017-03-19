@@ -343,6 +343,7 @@ def CA():
 
 def main():
     while True:
+        print('Config Loaded! \n\nUsing First Name: {} \nLast Name: {} \nDate Of Birth \nMonth: {} \nDay: {} \nYear: {} \n' .format(FirstName,LastName,Month,Day,Year))
         loc = input('ENTER LOC US UK AU CA.\t')
         if loc == 'UK':
             UK()
