@@ -1,4 +1,3 @@
-from __future__ import absolute_import, division, print_function
 import requests, time, random, string, os, json
 from bs4 import BeautifulSoup
 from GmailDotEmailGenerator import GmailDotEmailGenerator
