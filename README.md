@@ -17,6 +17,7 @@ Info:
 - CD to the location via Terminal / CMD
 - python setup.py install
 - GmailDotGen should be installed. This is only a 1 time thing. You don't have to keep reinstalling.
+- Open config.json EDIT INSIDE THE "" e.g. First_Name:"John". DO NOT EDIT THE VARIABLE JUST THE NAME/ VALUES.
 - Run Adi Account Gen .py 
 - When you are prompted for Prefix. It means enter everything before @gmail.com for instances: 
 - simmy212@gmail.com > enter simmy212
