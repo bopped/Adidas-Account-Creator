@@ -40,7 +40,7 @@ def US():
             (GmailDotEmailGenerator(basemail + '@gmail.com').generate())[:accountstogen]:
 
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
             'Accept-Encoding': 'gzip, deflate, sdch, br',
             'Accept-Language': 'en-US,en;q=0.8',
             'Upgrade-Insecure-Requests': '1'
@@ -123,7 +123,7 @@ def UK():
             (GmailDotEmailGenerator(basemail + '@gmail.com').generate())[:accountstogen]:
 
         headers = {
-            'GBer-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
             'Accept-Encoding': 'gzip, deflate, sdch, br',
             'Accept-Language': 'en-GB,en;q=0.8',
             'Upgrade-Insecure-Requests': '1'
@@ -139,7 +139,6 @@ def UK():
 
         r = s.get('https://cp.adidas.co.uk/web/eCom/en_GB/loadcreateaccount')
         csrftoken = BeautifulSoup(r.text, "html.parser").find('input', {'name': 'CSRFToken'}).get('value')
-
         s.headers.update({
             'Origin': 'https://cp.adidas.co.uk',
             'Referer': 'https://cp.adidas.co.uk/web/eCom/en_GB/loadcreateaccount',
@@ -206,7 +205,7 @@ def AU():
             (GmailDotEmailGenerator(basemail + '@gmail.com').generate())[:accountstogen]:
 
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
             'Accept-Encoding': 'gzip, deflate, sdch, br',
             'Accept-Language': 'en-US,en;q=0.8',
             'Upgrade-Insecure-Requests': '1'
@@ -286,7 +285,7 @@ def CA():
             (GmailDotEmailGenerator(basemail + '@gmail.com').generate())[:accountstogen]:
 
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
             'Accept-Encoding': 'gzip, deflate, sdch, br',
             'Accept-Language': 'en-US,en;q=0.8',
             'Upgrade-Insecure-Requests': '1'
