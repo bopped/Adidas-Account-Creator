@@ -25,6 +25,20 @@ Info:
 - profit.
 --------------------------------------------------------------------
 3. Troubleshooting. DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
+- Common Problems:
+
+![Alt text](http://i.imgur.com/QzUOpmi.png "JSON Error")
+- Redownload config.json and use sublime Text 3 or ATOM, to edit the config.json.
+- ****** DO NOT USE TEXTEDIT OR NOTEPAD*******
+
+- Import Error no module named x .Install One of the required modules is missing.
+
+
+
+
+
+
+
 --------------------------------------------------------------------
 4. Feel free to study, revise mine. It's open source for a reason.
 --------------------------------------------------------------------
