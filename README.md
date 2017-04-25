@@ -1,6 +1,6 @@
 # Adidas Account Gen.
 
-All Credit to https://github.com/doprdele for orginal script.
+Credit to https://github.com/doprdele for orginal script. 
 
 --------------------------------------------------------------------
 Info:
@@ -34,6 +34,9 @@ Info:
 - Import Error no module named x .Install One of the required modules is missing.
 
 
+## Disclaimer - 
+
+- I'm not responsible for anything you do with this script :). 
 
 
 
