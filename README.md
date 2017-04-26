@@ -23,6 +23,7 @@ Info:
 - simmy212@gmail.com > enter simmy212
 - ?????
 - profit.
+## DO NOT EDIT ANYTHING IN THE SCRIPT!!!!! ONLY CONFIG.JSON ## 
 --------------------------------------------------------------------
 3. Troubleshooting. DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
 - Common Problems:
