@@ -68,10 +68,11 @@ class AccountGEN:
 					}
 
 			s.headers.update(headers)
-
-			GETCSRF      = s.get('https://cp.adidas.com/web/eCom/en_US/loadcreateaccount')
-			CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
-
+			try:
+				GETCSRF      = s.get('https://cp.adidas.com/web/eCom/en_US/loadcreateaccount')
+				CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
+			except:
+				self.log("Could not grab Token! Possible you're Banned!")
 			s.headers.update({
 							  'Origin' : 'https://cp.adidas.com',
 							  'Referer': 'https://cp.adidas.com/web/eCom/en_US/loadcreateaccount'})
@@ -158,10 +159,11 @@ class AccountGEN:
 					}
 
 			s.headers.update(headers)
-
-			GETCSRF      = s.get('https://cp.adidas.co.uk/web/eCom/en_GB/loadcreateaccount')
-			CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
-
+			try:
+				GETCSRF      = s.get('https://cp.adidas.co.uk/web/eCom/en_GB/loadcreateaccount')
+				CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
+			except:
+				self.log("Could not grab Token! Possible you're Banned!")
 			s.headers.update({
 				'Origin': 'https://cp.adidas.co.uk',
 				'Referer': 'https://cp.adidas.co.uk/web/eCom/en_GB/loadcreateaccount'})
@@ -253,10 +255,11 @@ class AccountGEN:
 						}
 
 				s.headers.update(headers)
-
-				GETCSRF      = s.get('https://cp.adidas.com/web/eCom/en_AU/loadcreateaccount')
-				CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
-
+				try:
+					GETCSRF      = s.get('https://cp.adidas.com/web/eCom/en_AU/loadcreateaccount')
+					CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
+				except:
+					self.log("Could not grab Token! Possible you're Banned!")
 				s.headers.update({
 					'Origin': 'https://cp.adidas.com',
 					'Referer': 'https://cp.adidas.com/web/eCom/en_AU/loadcreateaccount'})
@@ -344,9 +347,11 @@ class AccountGEN:
 						}
 
 				s.headers.update(headers)
-
-				GETCSRF      = s.get('https://cp.adidas.ca/web/eCom/en_CA/loadcreateaccount')
-				CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
+				try:
+					GETCSRF      = s.get('https://cp.adidas.ca/web/eCom/en_CA/loadcreateaccount')
+					CSRF         = BeautifulSoup(GETCSRF.text, "html.parser").find('input', {'name': 'CSRFToken'})['value']
+				except:
+					self.log("Could not grab Token! Possible you're Banned!")
 
 				s.headers.update({
 					'Origin': 'https://cp.adidas.ca',
