@@ -83,24 +83,24 @@ class AccountGEN:
 				Password    = ''.join(random.choice(chars) for i in range(length))
 
 			POSTDATA     =   {
-				'firstName'      				: FirstName,
-				'lastName'       				: LastName,
-				'minAgeCheck'    				: 'true',
-				'_minAgeCheck'   				: 'on',
-				'email'          				: email,
-				'password'       				: Password,
-				'confirmPassword'				: Password,
-				'_amf'           				: 'on',
-				'terms'          				: 'true',
-				'_terms'         				: 'on',
-				'metaAttrs[pageLoadedEarlier]'  : 'true',
-				'app'                           : 'eCom',
-				'locale'                        : 'en_US',
-				'domain'                        : '',
-				'consentData1'                  : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
-				'consentData2'                  : '',
-				'consentData3'                  : '',
-				'CSRFToken'                     : CSRF
+				'firstName'                                     : FirstName,
+				'lastName'                                      : LastName,
+				'minAgeCheck'                                   : 'true',
+				'_minAgeCheck'                                  : 'on',
+				'email'                                         : email,
+				'password'                                      : Password,
+				'confirmPassword'                               : Password,
+				'_amf'                                          : 'on',
+				'terms'                                         : 'true',
+				'_terms'                                        : 'on',
+				'metaAttrs[pageLoadedEarlier]'                  : 'true',
+				'app'                                           : 'eCom',
+				'locale'                                        : 'en_US',
+				'domain'                                        : '',
+				'consentData1'                                  : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
+				'consentData2'                                  : '',
+				'consentData3'                                  : '',
+				'CSRFToken'                                     : CSRF
 							   }
 
 			URL           = 'https://cp.adidas.com/web/eCom/en_US/accountcreate'
@@ -271,25 +271,25 @@ class AccountGEN:
 					Password    = ''.join(random.choice(chars) for i in range(length))
 
 				POSTDATA     =   {
-						   'firstName'					 : FirstName,
-						   'lastName'					 : LastName,
-						   'day'						 : Day,
-						   'month'						 : Month,
-						   'year'					  	 : Year,
-						   'email'						 : email,
-						   'password'					 : Password,
-						   'confirmPassword'			 : Password,
-						   '_amf'						 : 'on',
-						   'terms'						 : 'true',
-						   '_terms'						 : 'on',
-						   'metaAttrs[pageLoadedEarlier]': 'true',
-						   'app'						 : 'eCom',
-						   'locale'						 : 'en_AU',
-						   'domain'  					 : '',
-						   'consentData1'				 : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
-						   'consentData2'				 : '',
-						   'consentData3'				 : '',
-						   'CSRFToken'					 : CSRF
+						   'firstName'                                   : FirstName,
+						   'lastName'                                    : LastName,
+						   'day'                                         : Day,
+						   'month'                                       : Month,
+						   'year'                                        : Year,
+						   'email'                                       : email,
+						   'password'                                    : Password,
+						   'confirmPassword'                             : Password,
+						   '_amf'                                        : 'on',
+						   'terms'                                       : 'true',
+						   '_terms'                                      : 'on',
+						   'metaAttrs[pageLoadedEarlier]'                : 'true',
+						   'app'                                         : 'eCom',
+						   'locale'                                      : 'en_AU',
+						   'domain'                                      : '',
+						   'consentData1'                                : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
+						   'consentData2'                                : '',
+						   'consentData3'                                : '',
+						   'CSRFToken'                                   : CSRF
 								   }
 
 				URL           = 'https://cp.adidas.com/web/eCom/en_AU/accountcreate'
@@ -365,25 +365,25 @@ class AccountGEN:
 					Password    = ''.join(random.choice(chars) for i in range(length))
 
 				POSTDATA     =   {
-						   'firstName'   					: FirstName,
-						   'lastName'    					: LastName,
-						   'minAgeCheck' 					: 'true',
-						   '_minAgeCheck'					: 'on',
-						   'email'       					: email,
-						   'password'	 					: Password,
-						   'confirmPassword'				: Password,
-						   'amf'							: 'true',
-						   '_amf'							: 'on',
-						   'terms'							: 'true',
-						   '_terms'							: 'on',
-						   'metaAttrs[pageLoadedEarlier]'	: 'true',
-						   'app'							: 'eCom',
-						   'locale'							: 'en_CA',
-						   'domain'							: '',
-						   'consentData1'					: 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
-						   'consentData2'					: 'By entering my information, I give permission for adidas Canada Limited to contact me in future for marketing, advertising and oaS pinion research for purposes of the adidas Group. I understand I can later withdraw consent.<a target="_blank" href="http://www.adidas.ca/en/help-topics-privacy_policy.html"><b>Learn More</b></a',
-						   'consentData3'					: '',
-						   'CSRFToken'						: CSRF
+						   'firstName'                                          : FirstName,
+						   'lastName'                                           : LastName,
+						   'minAgeCheck'                                        : 'true',
+						   '_minAgeCheck'                                       : 'on',
+						   'email'                                              : email,
+						   'password'                                           : Password,
+						   'confirmPassword'                                    : Password,
+						   'amf'                                                : 'true',
+						   '_amf'                                               : 'on',
+						   'terms'                                              : 'true',
+						   '_terms'                                             : 'on',
+						   'metaAttrs[pageLoadedEarlier]'                       : 'true',
+						   'app'                                                : 'eCom',
+						   'locale'                                             : 'en_CA',
+						   'domain'                                             : '',
+						   'consentData1'                                       : 'Sign me up for adidas emails, featuring exclusive offers, featuring latest product info, news about upcoming events, and more. See our <a target="_blank" href="https://www.adidas.com/us/help-topics-privacy_policy.html">Policy Policy</a> for details.',
+						   'consentData2'                                       : 'By entering my information, I give permission for adidas Canada Limited to contact me in future for marketing, advertising and oaS pinion research for purposes of the adidas Group. I understand I can later withdraw consent.<a target="_blank" href="http://www.adidas.ca/en/help-topics-privacy_policy.html"><b>Learn More</b></a',
+						   'consentData3'                                       : '',
+						   'CSRFToken'                                          : CSRF
 								   }
 
 				URL           = 'https://cp.adidas.ca/web/eCom/en_CA/accountcreate'
