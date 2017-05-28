@@ -9,8 +9,9 @@
 
 
 ## How to Run:
-- Open config.json, EDIT USING SUBLIME TEXT 3 OR ATOM. *NOT TEXTEDIT OR NOTEPAD*
 - ******Add Your Info into config.json****
+- ******DO NOT EDIT ANYTHING IN THE SCRIPT!!!!! ONLY CONFIG.JSON******
+- Open config.json, EDIT USING SUBLIME TEXT 3 OR ATOM. *NOT TEXTEDIT OR NOTEPAD*
 - Download this https://github.com/doprdele/GmailDotEmailGenerator 
 - Unzip. 
 - CD to the location via Terminal / CMD
@@ -19,7 +20,6 @@
 - Run A.A.C.py.
 - ?????
 - Profit.
-## DO NOT EDIT ANYTHING IN THE SCRIPT!!!!! ONLY CONFIG.JSON ## 
 
 
 ## Modules Needed:
