@@ -29,7 +29,6 @@
 ###### Modules are easy to install. Use Google and your brain :)
 
 
-
 ## Troubleshooting: 
 - DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
 - Common Problems:
@@ -43,12 +42,9 @@
 
 - I'm not responsible for anything you do with this script :). 
 
+## Message from me:
+- Feel free to study, revise mine. It's open source for a reason.
 
-
-
---------------------------------------------------------------------
-4. Feel free to study, revise mine. It's open source for a reason.
---------------------------------------------------------------------
 
 
 
