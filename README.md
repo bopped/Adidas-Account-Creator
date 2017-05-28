@@ -17,6 +17,7 @@
 - CD to the location via Terminal / CMD
 - python setup.py install
 - GmailDotGen should be installed. This is only a 1 time thing. You don't have to keep reinstalling.
+- After that is installed, CD to Adidas Account Gen FOLDER.
 - Run A.A.C.py.
 - ?????
 - Profit.
