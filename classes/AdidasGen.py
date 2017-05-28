@@ -106,9 +106,9 @@ class AccountGEN:
 			AccountStatus = self.POST(s, URL, payload=POSTDATA)
 
 			if AccountStatus:
-				self.log("Account Created Successfully! Email: %s. Password: %s" % (Email,Password),success)
+				self.log("Account Created Successfully! Email: %s. Password: %s" % (email,Password),success)
 				with open('accounts' + '.txt', 'a') as f:
-					f.write('%s:%s\n' % (Email,Password) )
+					f.write('%s:%s \n' % (email,Password))
 					f.close()
 				Sleep = (random.randint(2, 10))
 				self.log("Sleeping for %d seconds" % (Sleep),info)
@@ -116,7 +116,7 @@ class AccountGEN:
 
 
 			if not AccountStatus:
-				self.log("Account could not be created! Email: %s. Password: %s" % (Email,Password),error)
+				self.log("Account could not be created! Email: %s. Password: %s" % (email,Password),error)
 
 			s.cookies.clear()
 
@@ -201,9 +201,9 @@ class AccountGEN:
 			AccountStatus = self.POST(s, URL, payload=POSTDATA)
 
 			if AccountStatus:
-				self.log("Account Created Successfully! Email: %s. Password: %s" % (Email,Password),success)
+				self.log("Account Created Successfully! Email: %s. Password: %s" % (email,Password),success)
 				with open('accounts' + '.txt', 'a') as f:
-					f.write('%s:%s\n' % (Email,Password) )
+					f.write('%s:%s\n' % (email,Password))
 					f.close()
 				Sleep = (random.randint(2, 10))
 				self.log("Sleeping for %d seconds" % (Sleep),info)
@@ -211,7 +211,7 @@ class AccountGEN:
 
 
 			if not AccountStatus:
-				self.log("Account could not be created! Email: %s. Password: %s" % (Email,Password),error)
+				self.log("Account could not be created! Email: %s. Password: %s" % (email,Password),error)
 
 			s.cookies.clear()
 
@@ -294,9 +294,9 @@ class AccountGEN:
 				AccountStatus = self.POST(s, URL, payload=POSTDATA)
 
 				if AccountStatus:
-					self.log("Account Created Successfully! Email: %s. Password: %s" % (Email,Password),success)
+					self.log("Account Created Successfully! Email: %s. Password: %s" % (email,Password),success)
 					with open('accounts' + '.txt', 'a') as f:
-						f.write('%s:%s\n' % (Email,Password) )
+						f.write('%s:%s\n' % (email, Password))
 						f.close()
 					Sleep = (random.randint(2, 10))
 					self.log("Sleeping for %d seconds" % (Sleep),info)
@@ -304,7 +304,7 @@ class AccountGEN:
 
 
 				if not AccountStatus:
-					self.log("Account could not be created! Email: %s. Password: %s" % (Email,Password),error)
+					self.log("Account could not be created! Email: %s. Password: %s" % (email,Password),error)
 
 				s.cookies.clear()
 	def CA(self, s, data, NumberofAccounts):
@@ -386,9 +386,9 @@ class AccountGEN:
 				AccountStatus = self.POST(s, URL, payload=POSTDATA)
 
 				if AccountStatus:
-					self.log("Account Created Successfully! Email: %s. Password: %s" % (Email,Password),success)
+					self.log("Account Created Successfully! Email: %s. Password: %s" % (email,Password),success)
 					with open('accounts' + '.txt', 'a') as f:
-						f.write('%s:%s\n' % (Email,Password) )
+						f.write('%s:%s\n' % (email, Password))
 						f.close()
 					Sleep = (random.randint(2, 10))
 					self.log("Sleeping for %d seconds" % (Sleep),info)
@@ -396,10 +396,12 @@ class AccountGEN:
 
 
 				if not AccountStatus:
-					self.log("Account could not be created! Email: %s. Password: %s" % (Email,Password),error)
+					self.log("Account could not be created! Email: %s. Password: %s" % (email,Password),error)
 
 				s.cookies.clear()
 
 
 
-
+if __name__ == '__main__':
+	print "DO NOT RUN THIS FILE!!!!!"
+	exit()
