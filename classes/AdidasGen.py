@@ -1,7 +1,7 @@
 import time, random, string, os, sys
 from bs4 import BeautifulSoup
 from colorama import *
-from GmailDotEmailGenerator import GmailDotEmailGenerator
+from GmailDotGen import GmailDotEmailGenerator
 
 class AccountGEN:
 
@@ -409,4 +409,4 @@ class AccountGEN:
 
 if __name__ == '__main__':
 	print "DO NOT RUN THIS FILE!!!!!"
-	exit()
+	#exit()
