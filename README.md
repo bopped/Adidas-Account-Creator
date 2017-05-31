@@ -9,8 +9,11 @@
 
 
 ## How to Run:
+- Download this project (Duh). 
 - ******DO NOT EDIT ANYTHING IN THE SCRIPT!!!!! ONLY CONFIG.JSON******
-- Open config.json, EDIT USING SUBLIME TEXT 3 OR ATOM. *NOT TEXTEDIT OR NOTEPAD*.
+- Open config.json via Sublime Text 3 (other editors are fine as well like ATOM). *NOT TEXTEDIT OR NOTEPAD*.
+- Edit the config.
+- Open Command Prompt (CMD) or Terminal. 
 - CD into Adidas-Account-Gen folder (this project). CD via Command Prompt (CMD) or Terminal. 
 - Run A.A.C.py.
 - Profit.
