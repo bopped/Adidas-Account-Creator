@@ -9,17 +9,10 @@
 
 
 ## How to Run:
-- ******Add Your Info into config.json****
 - ******DO NOT EDIT ANYTHING IN THE SCRIPT!!!!! ONLY CONFIG.JSON******
-- Open config.json, EDIT USING SUBLIME TEXT 3 OR ATOM. *NOT TEXTEDIT OR NOTEPAD*
-- Download this https://github.com/doprdele/GmailDotEmailGenerator 
-- Unzip. 
-- CD to the location via Terminal / CMD
-- python setup.py install
-- GmailDotGen should be installed. This is only a 1 time thing. You don't have to keep reinstalling.
-- After that is installed, CD to Adidas Account Gen FOLDER.
+- Open config.json, EDIT USING SUBLIME TEXT 3 OR ATOM. *NOT TEXTEDIT OR NOTEPAD*.
+- CD into Adidas-Account-Gen folder (this project). CD via Command Prompt (CMD) or Terminal. 
 - Run A.A.C.py.
-- ?????
 - Profit.
 
 
@@ -27,8 +20,8 @@
 - Requests
 - BeautifulSoup4 
 - Colorama 
-###### Modules are easy to install. Use Google and your brain :)
 
+###### Modules are easy to install. Use Google and your brain :)
 
 ## Troubleshooting: 
 - DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
