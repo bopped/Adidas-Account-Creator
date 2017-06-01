@@ -24,7 +24,11 @@
 - BeautifulSoup4 
 - Colorama 
 
-###### Modules are easy to install. Use Google and your brain :)
+###### How to install modules:
+
+- pip install requests bs4 colorama
+
+- DONE. Thats it never have to do it again. 
 
 ## Troubleshooting: 
 - DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
