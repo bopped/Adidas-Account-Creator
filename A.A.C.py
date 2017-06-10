@@ -4,6 +4,8 @@
 import requests, time, os, json, sys
 from classes.AdidasGen import AccountGEN
 from colorama import *
+init()
+
 s = requests.Session()
 
 
