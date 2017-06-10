@@ -1,6 +1,7 @@
 import time, random, string, os, sys
 from bs4 import BeautifulSoup
 from colorama import *
+init()
 from GmailDotGen import GmailDotEmailGenerator
 
 class AccountGEN:
