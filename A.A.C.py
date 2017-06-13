@@ -71,9 +71,6 @@ if Region == "CA":
 if Region == "AU":
     Start.AU(s, config, NumberofAccounts)
 
-else:
-    log("%sPlease Check Input!!" % (Fore.RED))
-
 
 
 
