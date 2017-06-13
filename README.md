@@ -18,6 +18,10 @@
 - Run A.A.C.py.
 - Profit.
 
+- **You can skip the input all together**
+- **cd into dir, then do python A.A.C.py Region Number of Accounts.**
+- **python A.A.C.py US 100** - Example
+
 
 ## Modules Needed:
 - Requests
