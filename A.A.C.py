@@ -28,7 +28,7 @@ Start = AccountGEN(s,config)
 
 log("%s%sRegions US | CA | GB | AU%s" % (Style.BRIGHT,Fore.BLUE,Style.RESET_ALL))
 
-Region           = raw_input("Please Select a Region\t")
+Region           = raw_input("Please Select a Region\t").upper()
 NumberofAccounts = int(raw_input("Enter Amount Of Accounts To Generate\t"))
 
 
@@ -43,9 +43,8 @@ if Region == "CA":
 if Region == "AU":
     Start.AU(s, config, NumberofAccounts)
 
-
-
-
+else:
+    log("%sPlease Check Input!!" % (Fore.RED))
 
 
 
