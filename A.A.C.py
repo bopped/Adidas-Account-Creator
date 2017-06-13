@@ -5,7 +5,6 @@ import requests, time, os, json, sys
 from classes.AdidasGen import AccountGEN
 from colorama import *
 init()
-
 s = requests.Session()
 
 
@@ -14,9 +13,20 @@ def log(msg):
     sys.stdout.write("[%s] %s\n" % (currenttime, str(msg)))
     sys.stdout.flush()
 
+#Init
+Region           = ""
+NumberofAccounts = 0
+
+try:
+    if sys.argv > 1:
+        Region           = sys.argv[1]
+        NumberofAccounts = int(sys.argv[2])
+except:
+    log("%sYou Forgot to add Region or Number of accounts in your argument!!%s" % (Fore.RED,Style.RESET_ALL))
+
 
 if not os.path.exists("config.json"):
-    print "%sConfig.json not Found!!!"  %  (Fore.RED)
+    log("%sConfig.json not Found!!!"  %  (Fore.RED))
     exit()
 
 log("-------------------------------")
@@ -28,9 +38,21 @@ Start = AccountGEN(s,config)
 
 log("%s%sRegions US | CA | GB | AU%s" % (Style.BRIGHT,Fore.BLUE,Style.RESET_ALL))
 
-Region           = raw_input("Please Select a Region\t").upper()
-NumberofAccounts = int(raw_input("Enter Amount Of Accounts To Generate\t"))
+while True:
+    if Region == "":
+        Region           = raw_input("Please Select a Region\t").upper()
+    if Region != "":
+        log("Arugement Loaded! Region [ %s%s%s ]\n" % (Fore.GREEN,Region,Style.RESET_ALL))
+    Checked = True if Region == "US" or Region == "UK" or Region == "GB" or Region == "CA" or Region == "AU" else False
 
+    if not Checked:
+        log("%sSorry the following domain %s is not supported, or you mis-typed!%s" % (Fore.RED,Region,Style.RESET_ALL))
+
+    if Checked:
+        break 
+
+if NumberofAccounts == 0:
+    NumberofAccounts = int(raw_input("Enter Amount Of Accounts To Generate\t"))
 
 log("We are Generating %d Accounts for Region | %s |" % (NumberofAccounts,Region))
 
