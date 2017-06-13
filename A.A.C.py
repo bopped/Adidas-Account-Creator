@@ -17,12 +17,19 @@ def log(msg):
 Region           = ""
 NumberofAccounts = 0
 
-try:
-    if sys.argv > 1:
-        Region           = sys.argv[1]
-        NumberofAccounts = int(sys.argv[2])
-except:
-    log("%sYou Forgot to add Region or Number of accounts in your argument!!%s" % (Fore.RED,Style.RESET_ALL))
+if len(sys.argv) == 1:
+    log("%s[ Auto Mode is now off! ]%s" % (Fore.RED,Style.RESET_ALL))
+
+else:
+    try:
+        if sys.argv > 1:
+            Region           = sys.argv[1]
+            NumberofAccounts = int(sys.argv[2])
+            [log("Arugement Loaded! Region [ %s%s%s ]" % (Fore.GREEN,Region,Style.RESET_ALL)) if Region != "" else ""]
+            [log("Arugement Loaded! Number of Accounts [ %s%s%s ]" % (Fore.GREEN,NumberofAccounts,Style.RESET_ALL)) if Region != "" else ""]
+    except:
+        log("%sYou Forgot to add Region or Number of accounts in your argument!!%s" % (Fore.RED,Style.RESET_ALL))
+
 
 
 if not os.path.exists("config.json"):
@@ -41,12 +48,11 @@ log("%s%sRegions US | CA | GB | AU%s" % (Style.BRIGHT,Fore.BLUE,Style.RESET_ALL)
 while True:
     if Region == "":
         Region           = raw_input("Please Select a Region\t").upper()
-    if Region != "":
-        log("Arugement Loaded! Region [ %s%s%s ]\n" % (Fore.GREEN,Region,Style.RESET_ALL))
     Checked = True if Region == "US" or Region == "UK" or Region == "GB" or Region == "CA" or Region == "AU" else False
 
     if not Checked:
         log("%sSorry the following domain %s is not supported, or you mis-typed!%s" % (Fore.RED,Region,Style.RESET_ALL))
+        Region = ""
 
     if Checked:
         break 
