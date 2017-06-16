@@ -41,6 +41,10 @@
 - Redownload config.json and use sublime Text 3 or ATOM, to edit the config.json.
 - ****** DO NOT USE TEXTEDIT OR NOTEPAD*******
 
+- ![Alt text](http://i.imgur.com/vrl11NZ.png "python 3 Error")
+
+- If you recieve this Error, you are running python 3. This script is in 2.7.13
+
 - Import Error no module named x .Install One of the required modules is missing.
 
 ## Disclaimer - 
