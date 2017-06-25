@@ -37,7 +37,10 @@
 
 ##### Video Tutorial:
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/SY8g0b3DCyI/0.jpg)](http://www.youtube.com/watch?v=SY8g0b3DCyI "Video Tutorial")
-- Thank you [GSneaks](https://twitter.com/gsneaks191). 
+- Thank you [GSneaks](https://twitter.com/gsneaks191).
+
+- Side Note: You don't need to enter a password in the config.json - this allows random passwords per account.
+
 
 ## Troubleshooting: 
 - DM me ONLY after you have read the README! I WILL NOT HELP YOU IF YOU DIDN'T. 
