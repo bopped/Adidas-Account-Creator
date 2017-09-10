@@ -1,4 +1,4 @@
-# Adidas Account Gen.
+# Adidas Account Gen. ## TEMP Broken Needs Captcha Support. 
 ## Create Adidas Accounts for US | GB | AU | CA.
 
 ###### Developer: @bopped /// [My Twitter](https://twitter.com/Backdoorcook).
